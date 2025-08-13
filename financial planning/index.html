@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Financial Dashboard</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- CSS File -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<div class="dashboard">
+  <h1>Financial Dashboard</h1>
+  <p>Track your expenses and manage your budget</p>
+
+  <div class="cards">
+    <div class="card">
+      <h3>Total Balance</h3>
+      <p>$4,250.85</p>
+      <span class="positive">↑ 2.5% from last month</span>
+    </div>
+    <div class="card">
+      <h3>Monthly Income</h3>
+      <p>$6,500</p>
+      <span class="positive">↑ 5.2% from last month</span>
+    </div>
+    <div class="card">
+      <h3>Monthly Expenses</h3>
+      <p>$2,249.15</p>
+      <span class="negative">↑ 1.8% from last month</span>
+    </div>
+    <div class="card">
+      <h3>Budget Progress</h3>
+      <p>75.0%</p>
+      <span>$3,000 budget</span>
+    </div>
+  </div>
+
+  <div class="charts">
+    <div class="chart-container">
+      <h3>Expense Trends</h3>
+      <canvas id="lineChart"></canvas>
+    </div>
+    <div class="chart-container">
+      <h3>Spending by Category</h3>
+      <canvas id="pieChart"></canvas>
+    </div>
+  </div>
+
+  <div class="transactions">
+    <h3>Recent Transactions</h3>
+    <div class="transaction">
+      <div><i class="fas fa-shopping-cart"></i> Grocery Store - Food</div>
+      <div class="amount-negative">- $85.50</div>
+    </div>
+    <div class="transaction">
+      <div><i class="fas fa-money-bill"></i> Salary - Income</div>
+      <div class="amount-positive">+ $3,200.00</div>
+    </div>
+    <div class="transaction">
+      <div><i class="fas fa-gas-pump"></i> Gas Station - Transportation</div>
+      <div class="amount-negative">- $45.00</div>
+    </div>
+    <div class="transaction">
+      <div><i class="fas fa-utensils"></i> Restaurant - Food</div>
+      <div class="amount-negative">- $65.75</div>
+    </div>
+  </div>
+</div>
+
+<!-- JS File -->
+<script src="script.js"></script>
+
+</body>
+</html>
